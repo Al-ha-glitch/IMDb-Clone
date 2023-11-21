@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>IMDB Clone</title>
+    
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Outer-container for all the elements-->
+    <div class="outer-container">
+
+        <!-- nav container -->
+        <div class="logo">
+            <div class="container nav-bar">
+                <a href="index.html" id="logo"><img src="logo.png" alt=""></a>
+                <a href="fav/favPage.html" id="fav" >Favourites</a>
+                <a href="https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F" target="_blank">Sign In</a>
+            </div>
+        </div>
+        <!-- end of nav -->
+
+        <!-- Search container -->
+        <div class="search-container">
+            <div class="search-element">
+                
+                <input type="text"  placeholder="Search IMDb Movies..." class="form-control" id="movie-search-box">
+
+                <div class="search-list" id="search-list">
+                    <!-- This is the suggestions box list, inside which all similar movies will be displayed acc. to user entered movie title -->
+                </div>
+
+            </div>
+        </div>
+        <!-- end of Search container -->
+
+    </div>
+    <!-- end of outer container -->
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
